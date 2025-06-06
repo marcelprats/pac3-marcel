@@ -1,30 +1,20 @@
-/**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
-
-/**
- * Import variables
- */
-
+@import "normalize";
+/* Si tens variables personalitzades, importa-les després del reset */
 @import "variables";
 
-/**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
- */
+/* NO fem servir @tailwind base; perquè desactivarem el preflight al config */
+@tailwind components;
+@tailwind utilities;
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+/* Aquí va el teu @layer per extreure classes amb @apply, si cal */
+@layer components {
+  .btn-primari {
+    @apply bg-blue-600 text-white px-4 py-2 rounded;
+  }
+  .card-basic {
+    @apply border border-gray-200 p-4 rounded shadow;
+  }
+}
 
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
+/* Després importem els teus layouts (si els necessites) */
 @import "layouts/home";
-
-/**
- * Do NOT include anything else in this file!
- */
