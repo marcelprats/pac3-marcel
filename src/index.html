@@ -7,14 +7,15 @@
     <title>Concurs de Cuina UOC</title>
   </head>
   <body>
-    <div class="uoc-container">
+    <div class="uoc-container font-uoc">
  
       <picture>
         <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
         <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
       </picture>
       <nav>
-        <a href="participants.html">Participants</a>
+      <a href="plats.html">Plats</a> 
+      <a href="contestants.html">Pàgina IA</a>          
       </nav> 
       <h1 class="uoc-title mb-4">Concurs de Cuina UOC</h1>
       <p class="mb-8">
@@ -59,7 +60,9 @@
         }
       </include>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <footer>
+      <include src="./views/footer.html"></include>
+    </footer>
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>

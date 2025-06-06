@@ -14,6 +14,9 @@
   .card-basic {
     @apply border border-gray-200 p-4 rounded shadow;
   }
+  .card-zoom {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
 }
 
 /* Després importem els teus layouts (si els necessites) */

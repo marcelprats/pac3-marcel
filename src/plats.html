@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
-    <title>Participants - Concurs de Cuina UOC</title>
+    <title>Plats - Concurs de Cuina UOC</title>
   </head>
   <body>
-    <div class="uoc-container">
+    <div class="uoc-container font-uoc">
  
     <picture>
     <source srcset="assets/images/logo.png?as=webp&width=350" type="image/webp" />
@@ -15,8 +15,9 @@
     </picture>
       <nav>
         <a href="index.html">Inici</a>
+        <a href="contestants.html">Pàgina IA</a>          
       </nav> 
-      <h1 class="uoc-title mb-6">Participants del concurs</h1>
+      <h1 class="uoc-title mb-6">Plats del concurs</h1>
       <div class="participants-grid flex flex-wrap gap-8 justify-center">
         <!-- Participant 1 -->
         <include src="./components/_card.html">
@@ -47,7 +48,9 @@
         </include>
       </div>
     </div>
+    <footer>
     <include src="./views/footer.html"></include>
+    </footer>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
